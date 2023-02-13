@@ -1,0 +1,20 @@
+Connect to the above MySQL server with the 'mysql' tool, 
+and find the number of records returned 
+when doing a 'Union' of all records in the 'employees' table 
+and all records in the 'departments' table.
+
+mysql -u root -h (target) -P (target) -p 
+Enter Password: password
+
+show databases;
+
+use employees;
+
+show tables;
+
+select * from employees LIMIT 5;
+select * from departments LIMIT 5;
+select dept_no from departments UNION select emp_no from employees;
+
+663
+
