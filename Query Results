@@ -1,0 +1,7 @@
+What is the last name of the employee whose first name starts with "Bar" AND who was hired on 1990-01-01?
+
+describe employees;
+
+select * from employees where first_name like 'bar%' AND hire_date like '1990-01-01';
+
+Mitchem
