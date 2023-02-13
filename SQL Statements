@@ -1,0 +1,10 @@
+What is the department number for the 'Development' department?
+
+use employees
+
+show tables;
+
+select * from departments;
+
+d005
+
